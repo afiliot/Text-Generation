@@ -43,7 +43,7 @@ This folder contains the data set used for this project: `tatoeba` and `wiki`.
 
 ### Folder `Models`
 
-This folder contains one of the best models selected (yaml + hd5 format). **Warning: because of memory size limits, the models can be found here: https://drive.google.com/open?id=1BrFMfl1iDGwBfhyzlzf6VDJoVGfHL38D. For the last part of the experiments, you will need to load the best selected models. Instructions are given at the beginning of the notebook.**
+This folder contains one of the best models selected (yaml + hd5 format). Namely, a LSTM trained on `wiki` data set. **Warning: because of memory size limits, the models can be found here: https://drive.google.com/open?id=1BrFMfl1iDGwBfhyzlzf6VDJoVGfHL38D. For the last part of the experiments, you will need to load the best selected models. Instructions are given at the beginning of the notebook.**
 
 ### Folder `Checkpoints`
 
