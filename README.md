@@ -43,7 +43,11 @@ This folder contains the data set used for this project: `tatoeba` and `wiki`.
 
 ### Folder `Models`
 
-This folder contains the best models selected (yaml format).
+This folder contains one of the best models selected (yaml + hd5 format). **Beware: because of memory size limits, the models can be found here: https://drive.google.com/open?id=1BrFMfl1iDGwBfhyzlzf6VDJoVGfHL38D. For the last part of the experiments, you will need to load the best selected models. Instructions are given at the beginning of the notebook.
+
+### Folder `Checkpoints`
+
+This folder aims at storing the checkpoints from training.
 
 ### Folder `Results`
 
@@ -100,13 +104,13 @@ Here are some results obtained on `tatoeba` data set:
 | BiLSTMCNN |  **33.4%** (30.4%)    |  **27.8%** (27.4%)  |   **27.6%** (27.1%)  |  **30.9** (43.0)    |  **66.0** (66.2)  |  71.6 (**70.8**)   |
 
 
+- The perplexities and accuracies - in predicting next words - obtained on fine-tuned deep networks for `wiki` data set (blue: best on test set | red: best on validation set):
 
-
-
-
-
-
-
-
-
-# language-modeling
+| Models       | Train acc. | Val acc. | Test acc. | Train PP. | Val PP. | Test PP. |
+|--------|------------|----------|-----------|-----------|---------|----------|
+| LSTM   | 28.4%     |   26.9% |   26.5%  |  111.8    |  155.4  |  157.6   |
+| BiLSTM |  28.3%    |  26.5%  |   26.3%  |  102.9    | ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 144.3  |  ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) 145.2    |
+| RNN    |  26.1%    |  25.1%  |   24.9%  |  138.7    |  172.1  |  174.5   |
+| GRU    |  27.3%    |  26.3%  |   25.7%  |  127.2    |  161.5  |  162.4   |
+| FF     |  22.7%    |  23.1%  |   22.2%  |  472.0    |  513.3  |  594.0   |
+| BiLSTMCNN |  28.7%    |  26.3%  |   25.9%  |  94.2    |  167.1  |  166.4   |
