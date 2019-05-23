@@ -37,6 +37,10 @@ This file contains the implementation (with Keras) of deep recurrent networks (R
 
 This notebook reproduces our experiments. It is the only file you should run. We used Google Colab which offers the possibility to work on GPU (one Tesla K80).
 
+### `report.pdf`
+
+Our 2 pages report on the project.
+
 ### Folder `Data`
 
 This folder contains the data set used for this project: `tatoeba` and `wiki`.
